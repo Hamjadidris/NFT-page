@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(215, 51%, 70%);
+    background-color: hsl(178, 100%, 50%);
+    background-color: hsl(216, 50%, 16%);
+    background-color: hsl(215, 32%, 27%);
+    background-color: (0, 0%, 100%);
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.img-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 16px;
+}
+.img1{
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+}
+.img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-radius: 16px;
+}
+.img2:hover{
+    opacity: 0.4;
+    z-index: 1;
+    
+}
+.main-container{
+    height: 70%;
+    width: 25%;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 16px;
+}
+.main-container h3{
+    background-color: hsl(216, 50%, 16%);
+    margin: 15px 0;
+}
+.main-container h3:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
+
+.main-container p{
+    background-color: rgba(0, 0, 0, 0);
+    color: hsl(215, 51%, 70%);
+}
+
+.price-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.price-section p{
+    display: flex;
+    gap: 5px;
+}
+span{
+    background-color:rgba(0, 0, 0, 0);
+}
+span img{
+    background-color: rgba(0, 0, 0, 0);
+}
+.price-section :nth-last-of-type(2){
+    color: hsl(178, 100%, 50%);
+}
+footer{
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+    
+}
+footer img{
+    height: 80%;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    
+}
+footer span{
+    color: hsl(0,0,100%);
+}
+footer span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+hr{
+    border-color: hsl(215, 51%, 70%);
+}
+
+@media (min-width:300px) and (max-width:1000px){
+    .main-container{
+        height: 80vh;
+        width: 85%;
+    }
+
+}
