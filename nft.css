@@ -49,6 +49,7 @@ body{
     width: 25%;
     background-color: hsl(216, 50%, 16%);
     padding: 25px;
+    padding-bottom: 25px;
     border-radius: 16px;
 }
 .main-container h3{
